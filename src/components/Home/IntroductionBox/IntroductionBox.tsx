@@ -89,7 +89,7 @@ export default function IntroductionBox() {
           }}>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#cbff54] px-8 py-3 text-sm font-bold uppercase tracking-wider text-[#033231] transition-all duration-200 hover:bg-[#b8e649] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#cbff54]/50"
+              className="inline-flex items-center justify-center rounded-full bg-[#cbff54] px-8 py-3 text-sm font-bold uppercase tracking-wider text-[#033231] transition-all duration-200 hover:bg-[#b8e649] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#cbff54]/50 mb-5"
             >
               ENQUIRE NOW
             </Link>
