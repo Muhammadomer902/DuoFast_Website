@@ -33,7 +33,7 @@ export default function OriginationBox() {
   return (
     <section 
       ref={sectionRef}
-      className="w-full bg-white py-16 md:py-20 lg:py-24"
+      className="w-full bg-white py-16 md:py-20 lg:py-24 overflow-hidden"
     >
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 md:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
