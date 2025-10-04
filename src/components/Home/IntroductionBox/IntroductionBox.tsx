@@ -55,7 +55,7 @@ export default function IntroductionBox() {
             : 'translate-y-10 opacity-0'
         }`}>
           {/* Label */}
-          <p 
+          {/* <p 
             className="mb-6 text-xs font-bold uppercase tracking-widest text-[#cbff54]"
             style={{
               background: "radial-gradient(circle, rgba(203, 255, 84, 0.2) 0%, rgba(3, 50, 49, 0) 70%)",
@@ -64,7 +64,7 @@ export default function IntroductionBox() {
             }}
           >
             3+ YEARS OF EXCELLENCE
-          </p>
+          </p> */}
           
           {/* Main Heading */}
           <h1 className="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl mb-6">
