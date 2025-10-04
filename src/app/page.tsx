@@ -12,7 +12,7 @@ export default function Home() {
       <IntroductionBox />
       <StandOutBox />
       {/* <AboutUs /> */}
-      {/* <WhatWeDo /> */}
+      <WhatWeDo />
       <BuildDreamProject />
       <WhyXenotric />
     </div>
