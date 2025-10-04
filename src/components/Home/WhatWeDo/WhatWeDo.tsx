@@ -17,7 +17,7 @@ export default function WhatWeDo() {
         }
       },
       {
-        threshold: 0.3,
+        threshold: 0.2,
         rootMargin: "0px 0px -50px 0px"
       }
     )
@@ -93,14 +93,14 @@ export default function WhatWeDo() {
                 transitionDelay: isVisible ? service.delay : '0ms' 
               }}
             >
-              {/* Image Container - Placeholder for now */}
+              {/* Image Container */}
               <div className="relative h-64 overflow-hidden rounded-t-3xl bg-black">
-                {/* Placeholder for image - you can replace this with actual images later */}
-                {/* <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div> */}
                 <Image
-                  src= {service.image}
-                  alt="Main"
-                  className="absolute inset-0 h-full w-full object-cover"
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
 

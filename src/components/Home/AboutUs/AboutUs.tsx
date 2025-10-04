@@ -16,7 +16,7 @@ export default function AboutUs() {
         }
       },
       {
-        threshold: 0.25,
+        threshold: 0.2,
         rootMargin: "0px 0px -50px 0px"
       }
     )
@@ -46,23 +46,25 @@ export default function AboutUs() {
               : '-translate-x-20 opacity-0'
           }`}>
             {/* Main Image */}
-            <div className="relative h-[600px] overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl">
-              {/* Placeholder for main image */}
-                <Image
-                  src="/Home/AboutUs/MainPic.jpg"
-                  alt="Main"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
+            <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl">
+              <Image
+                src="/Home/AboutUs/MainPic.jpg"
+                alt="DuoFast team working on digital solutions"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+              />
             </div>
 
             {/* Overlapping Second Image */}
-            <div className="absolute -bottom-6 -right-8 h-48 w-48 overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-xl lg:h-56 lg:w-56">
-              {/* Placeholder for second image */}
-                <Image
-                  src="/Home/AboutUs/SecondaryPic.jpg"
-                  alt="Main"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 lg:-bottom-8 lg:-right-8 h-32 w-32 sm:h-40 sm:w-40 lg:h-56 lg:w-56 overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-xl">
+              <Image
+                src="/Home/AboutUs/SecondaryPic.jpg"
+                alt="Digital innovation showcase"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 128px, (max-width: 1024px) 160px, 224px"
+              />
             </div>
           </div>
 
