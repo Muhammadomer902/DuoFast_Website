@@ -10,7 +10,7 @@ export default function About() {
         <IntroductionBox />
         <OriginationBox />
         <ImpactWanted />
-        <OurFoundation />
+        {/* <OurFoundation /> */}
     </div>
   );
 }
