@@ -66,7 +66,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="flex items-center space-x-2">
+              <Link href="/" className="flex items-center space-x-2">
                 <div
                   className="w-8 h-8 bg-gradient-to-br from-yellow-600 to-yellow-300 rounded-lg flex items-center justify-center"
                   style={{
@@ -75,11 +75,11 @@ export default function Header() {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                   }}
-                ></div>
+                />
                 <span className="text-xl font-medium text-white">
                   <span className="font-bold">Duo</span>Fast
                 </span>
-              </div>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}

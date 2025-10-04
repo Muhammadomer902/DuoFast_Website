@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false)
@@ -47,7 +48,7 @@ export default function AboutUs() {
             {/* Main Image */}
             <div className="relative h-[600px] overflow-hidden rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-xl">
               {/* Placeholder for main image */}
-                <img
+                <Image
                   src="/Home/AboutUs/MainPic.jpg"
                   alt="Main"
                   className="absolute inset-0 h-full w-full object-cover"
@@ -57,7 +58,7 @@ export default function AboutUs() {
             {/* Overlapping Second Image */}
             <div className="absolute -bottom-6 -right-8 h-48 w-48 overflow-hidden rounded-3xl bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-xl lg:h-56 lg:w-56">
               {/* Placeholder for second image */}
-                <img
+                <Image
                   src="/Home/AboutUs/SecondaryPic.jpg"
                   alt="Main"
                   className="absolute inset-0 h-full w-full object-cover"

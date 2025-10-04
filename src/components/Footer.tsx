@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Twitter, Github, Linkedin } from "lucide-react"
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -68,22 +68,22 @@ export default function Footer() {
             </p>
 
             <div className="mt-6 flex items-center gap-4">
-              <a aria-label="Facebook" href="#" className="rounded-full p-2 text-white/80 transition hover:text-white">
-                <Facebook className="h-5 w-5" />
+              <a aria-label="GitHub" href="https://github.com/duofast" className="rounded-full p-2 text-white/80 transition hover:text-white">
+                <Github className="h-5 w-5" />
               </a>
               <a aria-label="Instagram" href="https://www.instagram.com/duofast.ltd/" className="rounded-full p-2 text-white/80 transition hover:text-white">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a aria-label="YouTube" href="#" className="rounded-full p-2 text-white/80 transition hover:text-white">
-                <Youtube className="h-5 w-5" />
+              <a aria-label="LinkedIn" href="#" className="rounded-full p-2 text-white/80 transition hover:text-white">
+                <Linkedin className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 aria-label="Twitter / X"
                 href="#"
                 className="rounded-full p-2 text-white/80 transition hover:text-white"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
 
           {/* Support */}
           <div className="md:col-span-2">
-            <h3 className="mb-4 text-base font-bold">Support</h3>
+            {/* <h3 className="mb-4 text-base font-bold">Support</h3>
             <ul className="space-y-3 text-sm text-white/80 font-semibold">
               {[
                 { href: "/blog", label: "Blog" },
@@ -133,7 +133,7 @@ export default function Footer() {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
           </div>
 
           {/* Contact */}
@@ -146,7 +146,7 @@ export default function Footer() {
                 </span>
                 <div>
                   <p className="font-semibold">Call us</p>
-                  <p className="text-white/80">+92 000 0000000</p>
+                  <p className="text-white/80">+92 339 486 7797</p>
                 </div>
               </li>
 
@@ -179,14 +179,14 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col items-center font-semibold justify-between gap-4 py-4 text-sm text-white/75 md:flex-row">
           <p className="order-2 md:order-1">© 2025 Copyright by DuoFast</p>
-          <nav className="order-1 flex items-center gap-6 md:order-2">
+          {/* <nav className="order-1 flex items-center gap-6 md:order-2">
             <a href="#" className="hover:underline">
               Privacy Policy
             </a>
             <a href="#" className="hover:underline">
               Terms &amp; Condition
             </a>
-          </nav>
+          </nav> */}
         </div>
       </section>
     </footer>

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Globe, Smartphone, Bot } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function WhatWeDo() {
   const [isVisible, setIsVisible] = useState(false)
@@ -96,7 +97,7 @@ export default function WhatWeDo() {
               <div className="relative h-64 overflow-hidden rounded-t-3xl bg-black">
                 {/* Placeholder for image - you can replace this with actual images later */}
                 {/* <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"></div> */}
-                <img
+                <Image
                   src= {service.image}
                   alt="Main"
                   className="absolute inset-0 h-full w-full object-cover"

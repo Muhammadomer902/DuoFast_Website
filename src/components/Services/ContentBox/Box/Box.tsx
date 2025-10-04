@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import { CheckCircle2 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface BoxProps {
   title: string
@@ -85,6 +86,17 @@ export default function Box({ title, description, benefits, imagePosition, image
               {/* Placeholder - the background will show your image when you add it */}
             </div>
           </div>
+
+          {/* <div className={`relative h-64 lg:h-auto ${imagePosition === "right" ? "lg:col-start-2" : ""}`}>
+            <Image
+              src={imageUrl}
+              alt={title}
+              fill
+              className="object-cover rounded-tr-[200px]"
+              priority={false} // Set to true for above-the-fold images
+              quality={75} // Adjust for balance between quality and size
+            />
+          </div> */}
 
           {/* Content Section */}
           <div className={`p-8 lg:p-10 flex flex-col justify-center ${imagePosition === "right" ? "lg:col-start-1" : ""}`}>

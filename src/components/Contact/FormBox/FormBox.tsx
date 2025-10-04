@@ -140,7 +140,7 @@ export default function FormBox() {
                 </div>
                 <div>
                   <p className="text-[#033231]">Call us anytime</p>
-                  <p className="text-[#033231] font-semibold">+92 000 0000000</p>
+                  <p className="text-[#033231] font-semibold">+92 339 486 7797</p>
                 </div>
               </div>
               
