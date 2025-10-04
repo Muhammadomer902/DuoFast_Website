@@ -35,12 +35,12 @@ export default function AboutUs() {
   return (
     <section 
       ref={sectionRef}
-      className="w-full bg-white py-12 sm:py-16 lg:py-20"
+      className="w-full bg-white py-12 sm:py-16 lg:py-20 overflow-hidden"
     >
-      <div className="mx-auto w-full max-w-[90%] sm:max-w-3xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+      <div className="mx-auto w-full max-w-7xl px-6 sm:px-8 md:px-10">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           {/* Left Side - Images */}
-          <div className={`relative transition-all duration-1000 ease-out ${
+          <div className={`relative pr-8 sm:pr-12 pb-8 sm:pb-12 transition-all duration-1000 ease-out ${
             isVisible 
               ? 'translate-x-0 opacity-100' 
               : '-translate-x-20 opacity-0'
@@ -52,12 +52,12 @@ export default function AboutUs() {
                 alt="DuoFast team working on digital solutions"
                 fill
                 className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 500px"
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 500px"
               />
             </div>
 
             {/* Overlapping Second Image */}
-            <div className="absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 lg:-bottom-6 lg:-right-6 h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40 overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-lg">
+            <div className="absolute bottom-0 right-0 h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40 overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-600 to-yellow-400 shadow-lg">
               <Image
                 src="/Home/AboutUs/SecondaryPic.jpg"
                 alt="Digital innovation showcase"
@@ -85,7 +85,7 @@ export default function AboutUs() {
               Your Global Partner in Digital Innovation.
             </h2>
             
-            <p className="text-base leading-relaxed text-gray-600 mb-6 sm:text-base">
+            <p className="text-base leading-relaxed text-gray-600 mb-6">
               At DuoFast, we are passionate about crafting cutting-edge digital solutions that empower businesses worldwide. Our expertise spans a wide range of services, designed to transform your ideas into powerful, market-ready realities. We build with integrity, creativity, and a steadfast commitment to your vision and success.
             </p>
 
