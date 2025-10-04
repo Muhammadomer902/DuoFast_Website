@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
         <IntroductionBox />
-        <OriginationBox />
+        {/* <OriginationBox /> */}
         {/* <ImpactWanted /> */}
         {/* <OurFoundation /> */}
     </div>
