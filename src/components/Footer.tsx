@@ -74,7 +74,7 @@ export default function Footer() {
               <a aria-label="Instagram" href="https://www.instagram.com/duofast.ltd/" className="rounded-full p-2 text-white/80 transition hover:text-white">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a aria-label="LinkedIn" href="#" className="rounded-full p-2 text-white/80 transition hover:text-white">
+              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/duofast/" className="rounded-full p-2 text-white/80 transition hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </a>
               {/* <a
